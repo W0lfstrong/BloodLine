@@ -1,0 +1,292 @@
+{
+   "Users":[
+       {
+          "Serial":1,
+          "BloodBank": "Sassoon Blood Bank ",
+          "Details": "Ground Floor,Section 5, Opp.Ambedkar Chawk,Station Rd, Pune, Maharashtra, Phone: 9423575986, 020-26128000, Ext-332-364 ,Fax: 020-26126868, Email: bjmc.bloodbank@gmail.com",
+          "Category": "Government",
+          "APositive": 12, "ANegative":19, "BPositive":13, "BNegative":16, "OPositive":15, "ONegative":18, "ABPositive":27, "ABNegative":36,
+          "Type": "Blood Bank"
+       },
+       {
+           "Serial":2,
+           "BloodBank": "Indian Serological Institute Blood Bank ",
+           "Details": "21, Anand Baugh, Navi Peth, Near Vaikunth, Pune, Maharashtra, Phone: 020-24535244, 9096039023 ,Fax: -, Email: isibloodbank@rediffmail.com",
+           "Category": "Charitable",
+           "APositive": 51, "ANegative":12, "BPositive":53, "BNegative":32, "OPositive":23, "ONegative":15, "ABPositive":41, "ABNegative":10,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":3,
+           "BloodBank": "Moraya Blood Bank",
+           "Details": "N.B.Engineers, Plot No.Se/1/1-1, D-11, Block, MIDC, Near Mohan Nagar, CHINCHWAD, Pune, Maharashtra, Phone: 9975564130, 02027462000 ,Fax: -, Email: morayabloodbank7@gmail.com",
+           "Category": "Charitable",
+           "APositive": 17, "ANegative":19, "BPositive":20, "BNegative":30, "OPositive":41, "ONegative":23, "ABPositive":13, "ABNegative":11,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":4,
+           "BloodBank": "Indian Red Cross Society, (Late Manikbai Chandulal Saraf ) Blood Bank",
+           "Details": "Near Govt. Silver Jubilee Hospital, Patas Road Baramati,, Baramati, Pune, Maharashtra, Phone: 9422333287, 02112-222951/320910 ,Fax: 00, Email: ircsbbbaramati@gmail.com",
+           "Category": "Red Cross",
+           "APositive": 40, "ANegative":12, "BPositive":34, "BNegative":15, "OPositive":19, "ONegative":25, "ABPositive":16, "ABNegative":19,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":5,
+           "BloodBank": "M/s Vidyashree Charitable Trusts Om Blood Bank",
+           "Details": "Upper Ground Floor, CTs No.61/1, Maruti Heights, Mangalwar Peth, Pune, Maharashtra, Phone: 09665012355,08149508080 / 7304101080 ,Fax: -, Email: muneshkolhe@rediffmail.com",
+           "Category": "Charitable",
+           "APositive": 49, "ANegative":31, "BPositive":14, "BNegative":29, "OPositive":16, "ONegative":16, "ABPositive":9, "ABNegative":26,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":6,
+           "BloodBank": "Pune Blood Bank",
+           "Details": "Orient villa , serve no 266, plot no 6 , Hadapsar, Pune, Maharashtra, Phone: 9075653410 ,Fax: -, Email: punebloodbank@gmail.com",
+           "Category": "Charitable",
+          "APositive": 19, "ANegative":12, "BPositive":19, "BNegative":20, "OPositive":31, "ONegative":41, "ABPositive":30, "ABNegative":48,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":7,
+           "BloodBank": "Red Plus Blood Bank Pune",
+           "Details": "Sr.No.952 to 958, Hiraratan Building., 1st floor, Near PMT Bus Stop, Bhosari, Pune, Maharashtra, Phone: 020-27112365 / 27112333, 9921166011 ,Fax: -, Email: redplusbloodbank@gmail.com",
+           "Category": "Charitable",
+           "APositive": 39, "ANegative":23, "BPositive":29, "BNegative":19, "OPositive":10, "ONegative":18, "ABPositive":12, "ABNegative":8,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":8,
+           "BloodBank": "Girija Blood Bank",
+           "Details": "s. H. 8, Hissa No 8, ground floor, Giriraj Nursing college, Indapur Road, Baramati, Pune, Maharashtra, Phone: 9665555498 ,Fax: -, Email: girijabloodbank@gmail.com<",
+           "Category": "Charitable",
+           "APositive": 15, "ANegative":10, "BPositive":53, "BNegative":12, "OPositive":18, "ONegative":54, "ABPositive":46, "ABNegative":6,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":9,
+           "BloodBank": "Deenanath Mangeshkar Hospital, Blood Bank",
+           "Details": "Erandawane, Near Mhatre Bridge, Pune, Maharashtra, Phone: 9822545665,4015196211007/1008 ,Fax: 020-40541003, Email: bloodbank@dmhospital.org",
+           "Category": "Charitable",
+          "APositive": 41, "ANegative":37, "BPositive":29, "BNegative":10, "OPositive":13, "ONegative":26, "ABPositive":29, "ABNegative":16,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":10,
+           "BloodBank": "Symbiosis University Hospital and Research Center Blood Bank of Symbiosis Trust",
+           "Details": "Room No.1806,Block B, Ground Floor, Gat No.936/1 & 936/2, At post- Lavale, , Mulshi, Pune, Maharashtra, Phone: 8087072212 ,Fax: -, Email: bloodbnk@suhrc.siu,edu.in",
+           "Category": "Charitable",
+           "APositive": 19, "ANegative":17, "BPositive":12, "BNegative":26, "OPositive":27, "ONegative":21, "ABPositive":37, "ABNegative":29,
+           "Type": "BSU"
+        },
+        {
+           "Serial":11,
+           "BloodBank": "Chakan Blood Bank",
+           "Details": " Sr. No. 4976/1/2 Gate No.2401, Yashwantnagar Ambethan Road. A/P Chakan, Tal.khed, Pune, Maharashtra, Phone: 9975564130,9021868968 ,Fax: 02135-249040, Email: bloodbankchakan@gmail.com",
+           "Category": "Charitable",
+          "APositive": 16, "ANegative":23, "BPositive":19, "BNegative":20, "OPositive":10, "ONegative":18, "ABPositive":20, "ABNegative":26,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":12,
+           "BloodBank": "Smt Kashibai Navale General Hospital Blood Bank",
+           "Details": "  Sr. No. 50/15 building NO.5 2nd floor, Narhe, Ambegaon, Pune, Maharashtra, Phone: 9370146779,020/24106229/109/140 ,Fax: 020)24699884, Email: drharke@sknmcgh.org",
+           "Category": "Charitable",
+          "APositive": 18, "ANegative":29, "BPositive":16, "BNegative":18, "OPositive":24, "ONegative":32, "ABPositive":16, "ABNegative":18,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":13,
+           "BloodBank": "Aditya Birla Memorial Hospital Blood Bank",
+           "Details": "Aditya Birla Memorial Hospital Marg, Survey No:31, Near Morya Mangal Karyalay, Thergaon, Chinchwad,, RESIDENTIAL COMPLEX, THERGAON, Pune, Maharashtra, Phone: 020-30717664 ,Fax: 9120-40707755, Email: rpsingh008@gmail.com",
+           "Category": "Charitable",
+          "APositive": 40, "ANegative":31, "BPositive":46, "BNegative":23, "OPositive":13, "ONegative":25, "ABPositive":28, "ABNegative":15,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":14,
+           "BloodBank": "Rotary Blood Bank",
+           "Details": " 18, Mahesh Society, Gopalwadi Road, Daund, Pune, Maharashtra, Phone: 7756873333 ,Fax: -, Email: rotarybloodbank2017@gmail.com",
+           "Category": "Charitable",
+          "APositive": 26, "ANegative":29, "BPositive":22, "BNegative":21, "OPositive":12, "ONegative":25, "ABPositive":39, "ABNegative":30,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":15,
+           "BloodBank": "KEM Hospital Blood Bank",
+           "Details": "Sardar Moodliar Road, Rastha Peth, Pune, Maharashtra, Phone: 9823955650, 9960839347 ,Fax: 26125603, Email: mathurabloodbank@gmail.com",
+           "Category": "Charitable",
+           "APositive": 20, "ANegative":38, "BPositive":14, "BNegative":39, "OPositive":21, "ONegative":19, "ABPositive":22, "ABNegative":27,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":16,
+           "BloodBank": "Garware Blood Bank",
+           "Details": "Near HP Gas godown, Talegaon Chakan Road, Talegaon Dabhade, Pune, Maharashtra, Phone: 8087099051 ,Fax: -, Email: kumarpr56@gmail.com",
+           "Category": "Charitable",
+           "APositive": 17, "ANegative":19, "BPositive":24, "BNegative":39, "OPositive":31, "ONegative":35, "ABPositive":37, "ABNegative":26,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":17,
+           "BloodBank": "Aadhar Blood Bank",
+           "Details": "S.No. 30, PLOT NO.11, 4TH office no: 401,402,403 & 5TH FLOOR OFF. NO. 502, Waris Heights, Satara Road, Dhankwadi, Pune, Maharashtra, Phone: 9890927792,(020)65266999,39398822,23,24 ,Fax: -, Email: patilsuresh9@gmail.com",
+           "Category": "Charitable",
+           "APositive": 4, "ANegative":19, "BPositive":22, "BNegative":29, "OPositive":16, "ONegative":11, "ABPositive":37, "ABNegative":36,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":18,
+           "BloodBank": "Vishweshwar Blood Bank",
+           "Details": "Padmashree, Dr. Dy. Patil Medical College Hospital , Sant Tukaram Nagar, Pimpari, Pune, Maharashtra, Phone: 9561792418,020-27423844 ,Fax: 020-27420439, Email: vishweshwar.vbb@rediffmail.com",
+           "Category": "Charitable",
+           "APositive": 31, "ANegative":8, "BPositive":17, "BNegative":10, "OPositive":12, "ONegative":17, "ABPositive":22, "ABNegative":19,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":19,
+           "BloodBank": "Jehangir Hospital Blood Bank",
+           "Details": "32, Sasoon Road, Pune, Maharashtra, Phone: 8888821008,020-66811722 / 66811723 ,Fax: 020-26050866, Email: bloodbank@jehangirhospital.com",
+           "Category": "Charitable",
+          "APositive": 31, "ANegative":35, "BPositive":26, "BNegative":17, "OPositive":14, "ONegative":16, "ABPositive":17, "ABNegative":26,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":20,
+           "BloodBank": "Jankalyan Raktapedhi Pune",
+           "Details": "1003, Shukrawar Peth, Swargate - Saras Baugh Road, Near. Natraj Hotel,Pune, Maharashtra, Phone: 9527768755,020-24449527/ 24444502 ,Fax: 020-24441463, Email: Janrakta@gmail.com",
+           "Category": "Charitable",
+           "APositive": 16, "ANegative":18, "BPositive":25, "BNegative":37, "OPositive":9, "ONegative":25, "ABPositive":24, "ABNegative":21,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":21,
+           "BloodBank": "M/s Pimpri Chinchwad Blood Bank",
+           "Details": " Mhada commercial complex,2nd floor above dakshin hotelSant Tukaram Nagar, Pimpri, Pune, Maharashtra, Phone: 7559419137 ,Fax: -, Email: bloodbankpc@gmail.com",
+           "Category": "Charitable",
+           "APositive": 7, "ANegative":3, "BPositive":9, "BNegative":14, "OPositive":19, "ONegative":8, "ABPositive":2, "ABNegative":17,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":22,
+           "BloodBank": "Grant Medical Foundation, A.H. Wadia Trust Blood Bank",
+           "Details": "40, Sassoon Road, Ruby Hall Clinic, Post Box No. 70, Pune, Maharashtra, Phone: 9890148566,020-26166318 ,Fax: 020-26164529, Email: bloodbank@rubyhall.com",
+           "Category": "Charitable",
+           "APositive": 35, "ANegative":18, "BPositive":21, "BNegative":19, "OPositive":10, "ONegative":14, "ABPositive":4, "ABNegative":9,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":23,
+           "BloodBank": "Acharya Anandrishiji Blood Bank",
+           "Details": "191/192, Sadashiv Peth, S.M.Joshi Foundation Bldg. Near Patrakar Bhavan, Pune, Maharashtra, Phone: 8554909040,020-24537627 ,Fax: 020-24531600, Email: aapunebloodbank@gmail.com",
+           "Category": "Charitable",
+           "APositive": 20, "ANegative":28, "BPositive":24, "BNegative":29, "OPositive":25, "ONegative":29, "ABPositive":19, "ABNegative":18,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":24,
+           "BloodBank": "Sahyadri Speaciality Hospital Blood Bank",
+           "Details": "Plot No-30 C, Erandvane, Karve Road, Pune, Maharashtra, Phone: 9673338405 / 9850540682 / 9422548833 ,Fax: 020 - 67213000, Email: labqm@sahyadrihospitals.com",
+           "Category": "Charitable",
+          "APositive": 2, "ANegative":6, "BPositive":13, "BNegative":15, "OPositive":19, "ONegative":15, "ABPositive":27, "ABNegative":16,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":25,
+           "BloodBank": "Poona Serological Institute Blood Bank",
+           "Details": "C.T.S. No-592,3rd Floor,Dhanwantari Complex, Near Tarachand Hosp, Rasta Peth, Pune, Maharashtra, Phone: 9225507815,020-26133387/26141719 ,Fax: 020-27472876, Email: psibbpune@gmail.com",
+           "Category": "Charitable",
+           "APositive": 4, "ANegative":12, "BPositive":32, "BNegative":23, "OPositive":10, "ONegative":15, "ABPositive":6, "ABNegative":9,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":26,
+           "BloodBank": "Inlaks & Budharani Hospital Blood Bank",
+           "Details": "7-9, Koregaon Park, Pune, Maharashtra, Phone: 9373510112,020-66099727 ,Fax: 020-66099703, Email: abarte2010@gmail.com",
+           "Category": "Charitable",
+           "APositive": 15, "ANegative":17, "BPositive":19, "BNegative":21, "OPositive":23, "ONegative":27, "ABPositive":4, "ABNegative":16,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":27,
+           "BloodBank": "Noble Charitable Trusts Noble Blood Bank",
+           "Details": "B-007, Basement c/o Noble Hospital, 153 Magarpatta city Road, Hadapsar, Pune, Maharashtra, Phone: 9011689494,020-66285050/5051 ,Fax: 020-66285199, Email: dramatesc@rediffmail.com",
+           "Category": "Charitable",
+           "APositive": 11, "ANegative":28, "BPositive":34, "BNegative":19, "OPositive":15, "ONegative":19, "ABPositive":5, "ABNegative":2,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":28,
+           "BloodBank": "Pune Chest & General Hospital Blood Bank",
+           "Details": "Aundh Camp, Pune, Maharashtra, Phone: 8857077981, 865748749, 9604871471 ,Fax: 020-27285432, Email: csaundhpune@yahoo.co.in",
+           "Category": "Government",
+           "APositive": 13, "ANegative":19, "BPositive":24, "BNegative":26, "OPositive":10, "ONegative":5, "ABPositive":17, "ABNegative":16,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":29,
+           "BloodBank": "M/s Bharati Vidyapeeth Medical Foundations Bharati Hospital Blood Bank",
+           "Details": "1st Floor, of Bharati Hospital, Bharati Vidyapeeth S.No. 28, Dhankawadi Campus, Pune- Satara Road, Pune, Maharashtra, Phone: 9420320999,020-40555555 Ext-115 ,Fax: 020 24379432, Email: bhbloodbank@gmail.com",
+           "Category": "Charitable",
+           "APositive": 16, "ANegative":18, "BPositive":24, "BNegative":18, "OPositive":19, "ONegative":1, "ABPositive":10, "ABNegative":7,
+           "Type": "Blood Bank"
+        },{
+           "Serial":30,
+           "BloodBank": "Rakesh Jain Memorial Blood Bank",
+           "Details": "Poona Hospital & Reserch Centre 27, Sadashiv Peth, Pune, Maharashtra, Phone: 9689947454,020-24331706 / 66069000 ,Fax: 91-20-24338477, Email: phrcjr@gmail.com",
+           "Category": "Charitable",
+           "APositive": 7, "ANegative":3, "BPositive":6, "BNegative":7, "OPositive":9, "ONegative":13, "ABPositive":17, "ABNegative":25,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":31,
+           "BloodBank": "Pimpri Chinchwad Municipal Corporation's Y.C.M. Hospital Blood Bankk",
+           "Details": "Ground floor of Y.C.M. Hospital, Sant Tukaram Nagar, Pimpri, Pune, Maharashtra, Phone: 9823038155 ,Fax: -, Email: bloodbank@pcmcindia.gov.in",
+           "Category": "Government",
+           "APositive": 24, "ANegative":6, "BPositive":2, "BNegative":3, "OPositive":4, "ONegative":5, "ABPositive":6, "ABNegative":7,
+           "Type": "Blood Bank"
+        },{
+           "Serial":32,
+           "BloodBank": "Akshay Blood Bank",
+           "Details": " Shree Mangal Building, S.No.10A, Hissa No.2A/3, Unnati Nagar, Opp. Bunter School, Saswad Road, Hadapsar,, Pune, Pune, Maharashtra, Phone: 970895533, 9552312345,020-26993247 ,Fax: -, Email: akshaybloodbankpune@gmail.com",
+           "Category": "Charitable",
+           "APositive": 9, "ANegative":21, "BPositive":5, "BNegative":8, "OPositive":10, "ONegative":15, "ABPositive":17, "ABNegative":26,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":33,
+           "BloodBank": "Sanjeevani Blood Bank",
+           "Details": "Bhosari 690, 2nd floor, Shine Grand, above Saraswat Bank, Shital Baugh Soc., Bhosari, Pune, Maharashtra, Phone: 7756873333, 8070104104 ,Fax: -, Email: pransanjeevanibb@gmail.com",
+           "Category": "Charitable",
+           "APositive": 11, "ANegative":15, "BPositive":8, "BNegative":5, "OPositive":10, "ONegative":21, "ABPositive":9, "ABNegative":10,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":34,
+           "BloodBank": "Jupiter Lifeline Hospital Blood Bank",
+           "Details": "Jupiter Lifeline Hospital, Second Floor, Near Prathmesh Park, Baner-Pimple Nilakh Road, Pune, Maharashtra, Phone: 9860816708, 020-27992799 ,Fax: -, Email: bloodbank.pune@jupiterhospital.com",
+           "Category": "Charitable",
+           "APositive": 5, "ANegative":3, "BPositive":3, "BNegative":1, "OPositive":9, "ONegative":12, "ABPositive":20, "ABNegative":16,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":35,
+           "BloodBank": "Pimpari Serological Institute Blood Bank",
+           "Details": "Esteem Tower, opp K.S.B Pump, Pune-Mumbai Highway, Kharalwadi, Pimpari, Pune, Maharashtra, Phone: 98226565020179, 27422279 ,Fax: -, Email: psibbpimpri@gmail.com",
+           "Category": "Charitable",
+         "APositive": 11, "ANegative":18, "BPositive":24, "BNegative":9, "OPositive":3, "ONegative":15, "ABPositive":6, "ABNegative":10,
+           "Type": "Blood Bank"
+        },
+        {
+           "Serial":36,
+           "BloodBank": "Sarvodaya Samaj Vikas Sanstha, R.G Gholap Memorial Blood Bank",
+           "Details": "Office no.301, 3rd floor Ashoka Centre, S.No. - 47/14, Pune Satara Road, Parvati, Pune, Maharashtra,  Phone: 9545646001,020-64012140, 9822442140 ,Fax: -, Email: gholapbloodbank@gmail.com",
+           "Category": "Charitable",
+           "APositive": 9, "ANegative":7, "BPositive":5, "BNegative":9, "OPositive":4, "ONegative":15, "ABPositive":12, "ABNegative":7,
+           "Type": "Blood Bank"
+        }
+             
+       
+   ]
+ }

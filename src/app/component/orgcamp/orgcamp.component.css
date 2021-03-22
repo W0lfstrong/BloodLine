@@ -1,0 +1,36 @@
+body {
+    background: #e65c00; 
+background: -webkit-linear-gradient(to right, #F9D423, #e65c00); 
+background: linear-gradient(to right, #F9D423, #e65c00); 
+color: black;
+
+      
+}
+.blink {
+    animation: blinker 0.6s linear infinite;
+    color: #1c87c9;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  .blink-one {
+    animation: blinker-one 1s linear infinite;
+  }
+  @keyframes blinker-one {
+    0% {
+      opacity: 0;
+    }
+  }
+  .blink-two {
+    animation: blinker-two 1.4s linear infinite;
+  }
+  @keyframes blinker-two {
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,11 @@
+.row {
+    background: #1D4350; 
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350); 
+background: linear-gradient(to right, #A43931, #1D4350); 
+  
+}
+
+.example-card {
+    max-width: 600px;
+    margin-left: 3rem;
+  }

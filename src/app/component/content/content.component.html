@@ -1,0 +1,416 @@
+<p></p>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 2.5rem;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff4d4d;
+  color: white;
+}
+</style>
+</head>
+<h1 style="background-color: rgb(34, 34, 34); color: white; text-align: center;">Hospital Dashboard</h1> <hr>
+<body>
+<div class="Container">
+  <nav class="navbar" >
+    <input class="form-control" type="text" name="BloodBank" [(ngModel)]="BloodBank" (ngModelChange)="Search()"
+    placeholder="Search by Blood Bank Name"> 
+    <pagination-controls (pageChange)="p = $event" style="margin-left: 8.8in;"></pagination-controls>
+   </nav>
+   <h2 style="text-align: center;">*Live Blood Count in terms of Pints*</h2>
+  <table id="customers">
+   <tr>
+    <th>Serial</th>
+    <th>BloodBank</th>
+    <th>Details</th>
+    <th>Category</th>
+    <th style="text-align: center;">A <br> Positive</th>
+    <th style="text-align: center;">A <br> Negative</th>
+    <th style="text-align: center;">B <br> Positive</th>
+    <th style="text-align: center;">B <br> Negative</th>
+    <th style="text-align: center;">O <br> Positive</th>
+    <th style="text-align: center;">O <br> Negative</th>
+    <th style="text-align: center;">AB <br> Positive</th>
+    <th style="text-align: center;">AB <br> Negative</th>
+    <th>Type</th>
+   
+  </tr>
+  <tbody>
+    <tr *ngFor= "let user of users | paginate: {itemsPerPage:5,currentPage:p};">
+      <td>{{user.Serial}}</td>
+      <td>{{user.BloodBank}}</td>
+      <td>{{user.Details}}</td>
+      <td>{{user.Category}}</td>
+      <td style="text-align: center;">{{user.APositive}}</td>
+      <td style="text-align: center;">{{user.ANegative}}</td>
+      <td style="text-align: center;">{{user.BPositive}}</td>
+      <td style="text-align: center;">{{user.BNegative}}</td>
+      <td style="text-align: center;">{{user.OPositive}}</td>
+      <td style="text-align: center;">{{user.ONegative}}</td>
+      <td style="text-align: center;">{{user.ABPositive}}</td>
+      <td style="text-align: center;">{{user.ABNegative}}</td>
+      <td>{{user.Type}}</td>
+    </tr>
+  </tbody>
+  </table><br>
+
+
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #f80707;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; 
+      border: 1px solid #888;
+      width: 80%; 
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+    /* Styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+   
+    
+    
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-left: 11.5in;">Book Blood Stock</button>
+    
+    <div id="id01" class="modal" >
+      
+      <form class="modal-content" >
+        
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+
+          
+         <div id="login-overlay" class="modal-dialog">
+             <div class="modal-content" >
+                 <div class="modal-header" style="background-color: rgba(0, 0, 0, 0.842);">
+                     
+                     <h2  style="color: white; margin-left: 8rem;" >Your  Details</h2>
+
+                 </div>
+                 <div class="modal-body" style="background-color: white;" >
+                     <div class="row form-group">
+                         <div class="col-sm-12">
+                             <div class="well">
+                             
+                       
+                       <div class="row">
+                          
+                                  <label for="username" class="control-label">Name<font color="red">*</font></label>
+                       <input type="text" name="donorFName" maxlength="50" tabindex="1" value="" onkeypress="return validateAlphaOnlyWithDotAndSpace(event)" class="form-control" id="txtBbFName" style="width: 3in; margin-left: 1rem;">
+                       <div align="center">
+                                               <div id="enterename" style="display:none;">
+                                                   <h4 class="text-danger">Please enter your name</h4>
+                                               </div>
+                                           
+                       </div><br>
+                     
+     
+        
+                    
+                     <div class="row">
+                           
+                                       <div class="col-12 col-sm-6">
+                                       <label for="Mobile" class="control-label">Mobile Number<font color="red">*</font></label>
+                                       <input type="text" name="donorFName" maxlength="50" tabindex="1" value="" onkeypress="return validateAlphaOnlyWithDotAndSpace(event)" class="form-control" id="txtBbFName" style="width: 3in; margin-left: 4rem;">
+                                       <div id="entermobile" style="display:none;">
+                                                   <h4 class="text-danger">Mobile Number is required</h4>
+                                               </div>
+                                               <div id = "dmobileNoTen" style = "display: none;">
+                                               <h4 class = "text-danger">Mobile Number should be 10 digit</h4>
+                                               </div>
+                                               
+                                       
+                                       </div>
+                                        
+                                         
+                           
+                     </div>
+                     
+                      
+                     
+                        <div class="col-12 col-sm-8">
+                                           <label for="Pincode" class="control-label">Blood Bank Name<font color="red">*</font></label> 
+                                              <select tabindex="1"
+                                               id="bbnamelist" name = "bloodBankName"
+                                               class="form-control" style="width: 16rem;">
+                                               <option value="-1">Select Blood Bank</option>
+                                           
+                                           <option value="35">Sassoon Blood Bank pune</option>
+        <option value="28">Indian Serological Institute Blood Bank</option>
+        <option value="12">Morya Blood Bank</option>
+        <option value="18">Indian Red Cross Society, (Late Manikbai Chandulal Saraf ) Blood Bank</option>
+        <option value="10">M/s Vidyashree Charitable Trusts Om Blood Bank</option>
+        <option value="94">Pune Blood Bank</option>
+        <option value="22">Red Plus Blood Bank Pune</option>
+        <option value="26">Girija Blood Bank</option>
+        <option value="25">Deenanath Mangeshkar Hospital, Blood Bank</option>
+        <option value="97">Symbiosis University Hospital and Research Center Blood Bank of Symbiosis Trust</option>
+        <option value="30">Chakan Blood Bank</option>
+        <option value="24">Smt Kashibai Navale General Hospital Blood Bank</option>
+        <option value="96">Aditya Birla Memorial Hospital Blood Bank</option>
+        <option value="92">Rotary Blood Bank</option>
+        <option value="91">KEM Hospital Blood Bank</option>
+        <option value="20">MIMER Medical College and Garware Blood Bank</option>
+        <option value="29">Chattrapati Shahu Maharaj Aadhar Blood Bank</option>
+        <option value="32">Padmashree Dr.D.Y Patil (Vishweshwar) Blood Bank</option>
+        <option value="37">Jehangir Hospital Blood Bank</option>
+        <option value="31">Jankalyan Raktapedhi Pune</option>
+        <option value="23">M/s Pimpri Chinchwad Blood Bank</option>
+        <option value="27">Grant Medical Foundation, A.H. Wadia Trust Blood Bank</option>
+        <option value="14">Acharya Anandrishiji Blood Bank</option>
+        <option value="17">Konkan Mitra Mandal Medical Trust's Sahyadri Speaciality Hospital Blood Bank</option>
+        <option value="15">Poona Serological Institute Blood Bank</option>
+        <option value="13">Sadhu Vaswani Mission Medical Complex, Inlaks & Budharani Hospital Blood Bank</option>
+        <option value="21">Noble Charitable Trusts Noble Blood Bank</option>
+        <option value="34">Pune Chest & General Hospital Blood Bank</option>
+        <option value="93">M/s Bharati Vidyapeeth Medical Foundations Bharati Hospital Blood Bank</option>
+        <option value="98">Rakesh Jain Memorial Blood Bank</option>
+        <option value="11">Pimpri Chinchwad Municipal Corporation's Y.C.M. Hospital Blood Bank</option>
+        <option value="33">Akshay Blood Bank</option>
+        <option value="36">Sanjeevani Blood Bank</option>
+        <option value="16">Jupiter Lifeline Hospital Blood Bank</option>
+        <option value="95">Pimpri Serological Institute Blood Bank</option>
+        <option value="99">Sarvodaya Samaj Vikas Sanstha, R.G Gholap Memorial Blood Bank</option></select>
+                                       <div id="enterbloodbankname" style="display:none;">
+                                                   <h4 class="text-danger">Please enter your blood bank name</h4>
+                                               </div>	 
+        
+                                       </div>
+                      </div>
+                         <div class="row">
+                           <div class="col-12 col-sm-6"> 
+                                  <label for="username" class="control-label">Blood Group</label>
+                                    <select tabindex="1"
+                                               name = "bloodgroup"
+                                               class="form-control">
+                                               <option value="-1">Select Blood Group </option>
+                                                 <option value = "1">A+Ve</option>
+             <option value = "2">A-Ve</option>
+             <option  value = "3">B+Ve</option>
+             <option  value = "4">B-Ve</option>
+             <option  value = "5">AB+Ve</option>
+             <option  value = "6">AB-Ve</option>
+             <option value = "7">O+Ve</option>
+             <option  value = "8">O-Ve</option>
+                                           </select>
+             </div>
+           <div class=" col-12 col-sm-6"> 
+                       <label for="Gender" class="control-label">GoI ID</label>
+                     <select tabindex="1"
+                                               name = "goiid" onchange = "goiddiv()"
+                                               class="form-control">
+                                           <option value="-1">Select Value</option>
+                                                    
+                                                     <option value="7#18#3">Aadhar Number</option>
+        <option value="4#18#2">Driving License</option>
+        <option value="5#18#2">Govt Authority Identifier</option>
+        <option value="1#10#2">PAN  </option>
+        <option value="2#8#2">Passport Number</option>
+        <option value="3#18#2">Voter Id</option>
+                                           </select>
+                       </div>
+                       <div class=" col-12 col-sm-4" id = "goinumber" style="display: none;"> 
+                       <label for="password" class="control-label">GoI ID Number</label>
+                       <input type="text"  name = "goinumber"  class="form-control" tabindex="1" maxlength="20" placeholder="GoI ID Number">
+                           <div id="entergoi" style="display:none;">
+                                                   <h4 class="text-danger">Please enter your GOI ID number</h4>
+                                               </div>
+                       </div>
+                       </div>
+                       
+                 <br>
+                          <div class="row">
+                          <div class="col-12 col-sm-4" >
+                          </div>
+                          <div class="col-12 col-sm-4" >
+                          <button mat-raised-button class="btn-grad" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Save</button>
+                          </div>
+                          <div class="col-12 col-sm-4" > 
+                          </div>
+                          </div>
+        
+                             </div>
+                         </div>
+                                 </div>
+                            
+                 </div>
+             </div>
+             
+         </div>
+           
+            <div id="id03" class="modal">
+           
+             
+            
+           <div class = "modal-content">
+           <div class = "modal-body" style="background-color: rgb(48, 48, 48);">
+                     <div class="row form-group" style="background-color: rgb(48, 48, 48);">
+                      
+                         <div class="col-sm-12">
+                          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="color: white;">&times;</span>
+                                             
+                                              
+                                          
+                                           <br><br><img style="width: 300px; margin-left: 3.8in; border-radius: 1rem;" src="assets/images/PopUp/bloodbag1.jpg"><hr style="background-color: red;"><br>
+                                           <h2 style="text-align: center;color: white;">Your requested Blood Stock has been booked!</h2>
+                                              
+                                  </div>
+                                           </div>
+                                               </div>    
+           </div>   
+        
+        
+        
+        </div>
+    
+
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+
+ 
+
+
+

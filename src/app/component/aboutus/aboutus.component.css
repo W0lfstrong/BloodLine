@@ -1,0 +1,16 @@
+.about-us {
+    padding: 50px;
+    background-color: white; }
+    @media screen and (max-width: 940px) {
+      .about-us {
+        padding: 30px 10px; } }
+    .about-us .text p {
+      font-weight: 300;
+      font-size: .85rem;
+      color: #000;
+      margin-bottom: 10px;
+      text-align: justify; }
+    .about-us .image img {
+      margin-top: 30px; }
+
+    
