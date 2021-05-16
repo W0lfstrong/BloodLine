@@ -1,6 +1,4 @@
 
-      
-<div class="city">
 
 <!-- Bloodline Tag -->
     <div style="background-color: rgb(255, 255, 255);">
@@ -66,14 +64,16 @@
     </div>
     </header>
     
+    
                         
 
 
 
     
     <!-- Router Outlet -->
+    <div class="city">
     <router-outlet></router-outlet><br><br><br><br>
-    
+    </div>
     
     <div id="id07" class="modal" >
         <form class="modal-content animate">
@@ -100,7 +100,7 @@
                   <div class="imgcontainer">
                     <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <div class="conatiner">
-                 <img src="assets/images/Footer/doctorclinic.jpg">
+                 <img src="assets/images/Footer/doctorsPic.jpg">
                  
                     </div><br>
             
@@ -118,13 +118,12 @@
     <!-- Contact US -->
     <footer id="contact" class="container-fluid">
         <div class="container">
-            
-            <div class="row content-ro">
+                <div class="row content-ro">
                 <div class="col-lg-4 col-md-12 footer-contact">
-                    <h2>Contact Information</h2>
+                    <h2 style="color: cornflowerblue;">Contact Information</h2><br>
                     <div class="address-row">
                         <div class="icon">
-                            <i class="fa fa-map-marker-alt">  </i>
+                            <i class="fa fa-map-marker">  </i>
                         </div>
                         <div class="detail">
                            
@@ -155,7 +154,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 footer-links">
                    
-                    <h2>Quick Links</h2>
+                    <h2 style="color: cornflowerblue;">Quick Links</h2><br>
                     <a class="nav-link" routerLink="/home" style="color: white;">Home</a>
                     <a class="nav-link"  routerLink="/donation" style="color: white;">Donation</a>
                     <a class="nav-link"  routerLink="/maps" style="color: white;">Maps</a>
@@ -169,47 +168,42 @@
                    
     
                 </div>
-                <div class="col-lg-4 col-md-12 footer-form">
-                    <div class="form-card">
-                        <div class="form-title">
-                            <h4 style="text-align: center;">Feedback</h4>
-                        </div>
-                        <div class="form-body">
-                            <input type="text" placeholder="Enter Name" class="form-control">
-                            <input type="text" placeholder="Enter Mobile no" class="form-control">
-                            <input type="text" placeholder="Enter E-mail Address" class="form-control">
-                            <input type="text" placeholder="Your Feedback" class="form-control"><hr>
-                            <button  class="btn-grad" mat-raised-button onclick="document.getElementById('id06').style.display='block'" style="width: 20rem; ">Submit Feedback</button>
-                        
-                        <div id="id06" class="modal">
-      
-                            <form class="modal-content animate">
-                              <div class="imgcontainer">
-                                <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                <div class="conatiner">
-                             <img src="assets/images/Footer/doctorclinic.jpg">
-                             
-                                </div><br>
-                        
 
-                                <h2 style="color: black;"> The following required Blood Group will be provided within 30 minutes to the mentioned address!</h2>
-                              </div>
-                          
-                             
-                            </form>
+                
+                <!-- FlipCard -->
+                <div class="col-lg-4 col-md-12 footer-form">
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <img src="assets/images/Footer/doctorclinic.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="form-title" style="background-color: orangered">
+                                        <h2 style="text-align: center; background-color: black; color: chartreuse;">Feedback</h2>
+                                    
+                                  <input type="text" placeholder="Enter Name" style="width: 18rem;">
+                                  <input type="text" placeholder="Enter Mobile no" style="width: 18rem;">
+                                  <input type="text" placeholder="Enter E-mail Address" style="width: 18rem;">
+                                  <input type="text" placeholder="Your Feedback" style="width: 18rem;"><hr>
+                                  <button   mat-raised-button color="primary" onclick="document.getElementById('id06').style.display='block'" style="width: 10rem; height: 3rem; ">Submit Feedback</button><br>
+                                <br></div>
+                                  <div id="id06" class="modal" style=" width: 100%; height: 100%;">
+                                    <span style="padding-left: 6rem;" onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          <img src="assets/images/Footer/thankyou.jpg" width="200px" height="200px">
                           </div>
-                          
-                          <script>
-                          // Get the modal
-                          var modal = document.getElementById('id06');
-                          
-                          // When the user clicks anywhere outside of the modal, close it
-                          window.onclick = function(event) {
-                              if (event.target == modal) {
-                                  modal.style.display = "none";
-                              }
-                          }
-                          </script>
+                                </div>
+                              </div> 
+                              <script>
+                                // Get the modal
+                                var modal = document.getElementById('id06');
+                                
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                                </script>
                             
                         </div>
                     </div>
@@ -220,7 +214,7 @@
 
 
 
-              <div class="row" style="margin-left: 1.5in;">
+              <br><div class="row" style="margin-left: 2.3in;">
                 
                                  
               <div class='column'  >  
@@ -239,9 +233,9 @@
                     <a href='https://nhm.gov.in/' >
                      <img src="assets/images/Footer/nhm.jpg" alt="National Health Mission"></a>   
                   </div>
-              </div>
+              </div><br>
 
-                  <div class='row'   style="margin-left: 3.5in; width: 600px;"> 
+                  <div class='row'   style="margin-left: 4.35in; width: 600px;"> 
                     <a   href="https://www.mohfw.gov.in/"> 
                     <img src="assets/images/Footer/MOHFW.jpg"  alt="Ministry of health and family welfare"></a>
                    </div>
@@ -256,25 +250,20 @@
 
 
             <div class="footer-copy">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                          
                 <div class="row">
                     <div class="col-lg-8 col-md-6">
                         <p>Copyright © <a href="http://localhost:4200">BloodLine.com</a> | All right reserved.</p>
                     </div>
-                    <div class="col-lg-4 col-md-6 socila-link">
-                        <ul>
-                            <li><a><i class="fa fa-instagram"></i></a></li>
-                            <li><a><i class="fa fa-google-plus"></i></a></li>
-                            <li><a><i class="fa fa-pinterest"></i></a></li>
-                            <li><a><i class="fa fa-twitter"></i></a></li>
-                            <li><a><i class="fa fa-facebook"></i></a></li>
-                         </ul>
-                     </div>
-                     <div class="col-lg-8 col-md-6">
+                    <div class="col-lg-4">
+                        <a href="#" class="fa fa-facebook" style="margin-left: 5rem;"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                        
                      
-                     </div>
-                     </div>
-            </div>
-        </div>
-    </footer>
- 
-        
+                     
+                     

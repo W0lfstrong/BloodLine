@@ -6,16 +6,16 @@
             <ul class="ulleft">
                         <li>
                            <br><span>    </span>
-                            <i class="far fa-envelope"></i>
+                            <i class="fa fa-envelope"></i>
                             <a href="mailto:bloodline.puneforum@gmail.com" style="color: white;">support@bloodline.com</a>
 
                             <span>|</span></li>
                         <li>
                             <br>
-                            <i class="far fa-clock"></i>
+                            <i class="fa fa-clock-o"></i>
                             24x7 Blood Support <span>|</span></li>
                            <br> <li>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fa fa-map-marker"></i>
                             Pune !
                             पुणे
                             
@@ -40,61 +40,226 @@
  
 
     <!-- Slider -->
-    <div class="slider-detail">
-
-      <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-
-          </ul>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img class="d-block w-100" src="assets/images/slider/slide-02.jpg" alt="First slide" style="filter: blur(2px); ">
-                  <div class="carousel-caption d-none d-md-block">
-                      <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
-                      <p class=" bounceInLeft">We provide you with Live count of Blood Stock at every Blood Bank in Pune.</p><br>
+<html>
+ 
+<div class="slider-detail">
+<div class="carousel-inner">
+<div class="carousel-item active">
+ 
+  <img class="mySlides" src="assets/images/slider/slide-02.jpg" >
 
 
-                      <div class=" vbh">
+    
+</div>
+  <div class="carousel-caption">
+    <div class=" vbh" style="margin-left: 1rem;">
+      <button class="btn" mat-raised-button color="primary" routerLink="/content" style=" height: 4rem;" >Request for Blood</button>
+      <button class="btn" mat-raised-button color="warn" routerLink="/donationportal" style="  height: 4rem;"> Online Blood Donation Request </button><br><br>
+      <button class="btn" mat-raised-button color="accent" routerLink="/contactus" style="  height: 4rem;"> Contact Us </button>
+  </div>
+<h5 style="margin-left: 1rem;">Request for Blood, Donate Blood & Save a Life.</h5><br><hr style="background-color: yellow;">
+<p style="text-align: center;">We provide you with Live count of Blood Stock at every Blood Bank in Pune.</p><br>
 
-                          <button class="btn-grad" routerLink="/content" > Blood Stock Booking</button>
-                          <button  class="btn-grad"  routerLink="/contactus" style="margin-left: 2rem;"> Contact Us </button>
-                      </div>
-                  </div>
+</div>
+</div>
+</div><hr>
+
+</html>
+
+<!-- -----------------------Charts------------------------- -->
+<h2 style="background-color: rgba(0, 0, 0, 0.493); color: white; text-align: center;">Pune City Blood Bank Data</h2>
+<div class=" container" style="background-color: rgb(204, 204, 204);"><hr>
+   <div class=" row" >
+    <div class=" col-12">
+      <div class=" card card-chart" style="background-color: rgb(10, 4, 14); color: white;">
+        <div class=" card-header">
+          <div class=" row">
+            <div class=" col-sm-6 text-left">
+              <h5 class=" card-category">Value in terms of Litre</h5>
+         <h2 class=" card-title">Blood Donation Statistics - 2020</h2>
+       </div>
+       <div class=" col-sm-6">
+         <div
+           class=" btn-group btn-group-toggle float-right"
+           data-toggle="buttons"
+         >
+           <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[0];updateOptions();clicked=true;
+           clicked1=false;clicked2=false;clicked3=false;clicked4=false;clicked5=false;clicked6=false;clicked7=false" [ngClass]="{'active':clicked===true}">
+             <input checked="checked" name="options" type="radio" />
+
+             <span
+               class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+             >
+               A+ve
+             </span>
+             <span class=" d-block d-sm-none">
+               <i class=" tim-icons icon-single-02"> </i>
+             </span>
+           </label>
+           <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[1];updateOptions();clicked=false;
+           clicked1=true;clicked2=false;clicked3=false;clicked4=false;clicked5=false;clicked6=false;clicked7=false" [ngClass]="{'active':clicked1===true}">
+             <input
+               class=" d-none d-sm-none"
+               name="options"
+               type="radio"
+             />
+
+             <span
+               class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+             >
+               A-ve
+             </span>
+             <span class=" d-block d-sm-none">
+               <i class=" tim-icons icon-gift-2"> </i>
+             </span>
+           </label>
+           <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[2];updateOptions();clicked=false;
+           clicked1=false;clicked2=true;clicked3=false;clicked4=false;clicked5=false;clicked6=false;clicked7=false" [ngClass]="{'active':clicked2===true}">
+             <input class=" d-none" name="options" type="radio" />
+
+             <span
+               class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+             >
+               B+ve
+             </span>
+             <span class=" d-block d-sm-none">
+               <i class=" tim-icons icon-tap-02"> </i>
+             </span>
+           </label>
+           <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[3];updateOptions();clicked=false;
+           clicked1=false;clicked2=false;clicked3=true;clicked4=false;clicked5=false;clicked6=false;clicked7=false" [ngClass]="{'active':clicked3===true}">
+            <input checked="checked" name="options" type="radio" />
+
+            <span
+              class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+            >
+              B-ve
+            </span>
+            <span class=" d-block d-sm-none">
+              <i class=" tim-icons icon-single-02"> </i>
+            </span>
+          </label>
+          <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[4];updateOptions();clicked=false;
+          clicked1=false;clicked2=false;clicked3=false;clicked4=true;clicked5=false;clicked6=false;clicked7=false" [ngClass]="{'active':clicked4===true}">
+            <input checked="checked" name="options" type="radio" />
+
+            <span
+              class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+            >
+              O+ve
+            </span>
+            <span class=" d-block d-sm-none">
+              <i class=" tim-icons icon-single-02"> </i>
+            </span>
+          </label>
+          <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[5];updateOptions();clicked=false;
+          clicked1=false;clicked2=false;clicked3=false;clicked4=false;clicked5=true;clicked6=false;clicked7=false" [ngClass]="{'active':clicked5===true}">
+            <input checked="checked" name="options" type="radio" />
+
+            <span
+              class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+            >
+              O-ve
+            </span>
+            <span class=" d-block d-sm-none">
+              <i class=" tim-icons icon-single-02"> </i>
+            </span>
+          </label>
+          <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[6];updateOptions();clicked=false;
+          clicked1=false;clicked2=false;clicked3=false;clicked4=false;clicked5=false;clicked6=true;clicked7=false" [ngClass]="{'active':clicked6===true}">
+            <input checked="checked" name="options" type="radio" />
+
+            <span
+              class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+            >
+              AB+ve
+            </span>
+            <span class=" d-block d-sm-none">
+              <i class=" tim-icons icon-single-02"> </i>
+            </span>
+          </label>
+          <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[7];updateOptions();clicked=false;
+          clicked1=false;clicked2=false;clicked3=false;clicked4=false;clicked5=false;clicked6=false;clicked7=true" [ngClass]="{'active':clicked7===true}">
+            <input checked="checked" name="options" type="radio" />
+
+            <span
+              class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+            >
+              AB-ve
+            </span>
+            <span class=" d-block d-sm-none">
+              <i class=" tim-icons icon-single-02"> </i>
+                  </span>
+                </label>
               </div>
-
-              <div class="carousel-item">
-                  <img class="d-block w-100" src="assets/images/slider/slide-03.jpg" alt="Third slide" style="filter: blur(2px);">
-                  <div class="carousel-caption vdg-cur d-none d-md-block">
-                      <h5 class=" bounceInDown">Donate Blood & Save a Life</h5>
-                      <p class=" bounceInLeft">Your precious initiative to donate blood could save 3 lives.</p><br>
-
-                      <div class=" vbh">
-
-                        <button class="btn-grad" routerLink="/donationportal" >Online Donation Request</button>
-                        <button  class="btn-grad" routerLink="/contactus" style="margin-left: 2rem;"> Contact Us </button>
-                      </div>
-                  </div>
-              </div>
-
+            </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-          </a>
+        </div>
+        <div class=" card-body">
+          <div class=" chart-area"><canvas id="chartBig1"> </canvas></div>
+        </div>
       </div>
+    </div>
+  </div> <hr>
+  <div class=" row">
+    <div class=" col-lg-4">
+      <div class=" card card-chart" style="background-color: rgb(17, 17, 17); color: white;">
+        <div class=" card-header">
+          <h5 class=" card-category">Year 2021 (Value in terms of Litre)</h5>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-bell-55 text-danger-states"> </i> Total Blood Donation
+          </h3>
+        </div>
+        <div class=" card-body">
+          <div class=" chart-area"><canvas id="chartLineRed"> </canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-4">
+      <div class=" card card-chart" style="background-color: rgb(17, 17, 17); color: white;">
+        <div class=" card-header">
+          <h5 class=" card-category">Quantity in terms of Litres</h5>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-delivery-fast text-info"> </i> Plasma Donation Statistics
+          </h3>
+        </div>
+        <div class=" card-body">
+          <div class=" chart-area"><canvas id="CountryChart"> </canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-4">
+      <div class=" card card-chart" style="background-color: rgb(17, 17, 17); color: white;">
+        <div class=" card-header">
+          <h5 class=" card-category">Year 2021 </h5>
+          <h3 class=" card-title">
+            <i class=" tim-icons icon-send text-success"> </i> Platelet Donation Statistics
+          </h3>
+        </div>
+        <div class=" card-body">
+          <div class=" chart-area"><canvas id="chartLineGreen"> </canvas></div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  </div><br><hr>
+ 
+    
+    
 
 
-  </div><hr>
 
- <div class="city">
-    <div class="col-md-12 ">
-    <h1 style="text-align: center; color:yellow; "><b><u>Services</u></b></h1>
+
+
+
+
+
+
+
+    <!-- Services -->
+ <div class="city"><br>
+    <div class="col-md-12 "><br>
+    <h1 style="text-align: center; color:yellow; "><b><u>Services</u></b></h1><hr>
     </div>
 <p style="text-align: center; color: white; font-size:1.2rem" >BloodLine is an initiative to connect, digitize and streamline the work flow of blood banks across the City.</p>
 <div >

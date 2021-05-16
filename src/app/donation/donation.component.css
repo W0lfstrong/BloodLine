@@ -1,6 +1,6 @@
 .blink {
     animation: blinker 0.6s linear infinite;
-    color: #1c87c9;
+    color: white;
     font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;

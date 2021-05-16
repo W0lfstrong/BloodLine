@@ -1,4 +1,4 @@
-.btn-grad {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+
 .btn-grad {
   
    padding: 15px 45px;
@@ -26,43 +26,53 @@
 
  
  .city{
-  background: #373B44;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #667db6;  
+background: -webkit-linear-gradient(to top, #667db6, #0082c8, #0082c8, #667db6);  
+background: linear-gradient(to top, #667db6, #0082c8, #0082c8, #667db6);
 
 
 }
 
 
-
   /* ===================================== Slider CSS ================================== */
-  .slider-detail .carousel-caption {
-    text-align: left;
-    bottom: 90px;
-    bottom: 105px; }
+ 
+  
+  .slider-detail .mySlides{
+    width: 100%;
+    filter: blur(2px);
+    
+     }
+    
+
     .slider-detail .carousel-caption h5 {
       font-size: 44px;
       margin-left: -40px;
       font-weight: 600;
-      text-align: center; }
+      text-align: center;
+    margin-top: -3rem;
+    }
+
     .slider-detail .carousel-caption p {
       margin-left: -40px;
-      margin-top: 40px;
+      
       font-size: 19px;
       text-align: center; }
   .slider-detail .vbh {
     margin-left: -40px;
-    text-align: center; }
+    text-align: center;
+  margin-bottom: 30px;
+margin-bottom: 6rem;
+}
     .slider-detail .vbh .btn {
       padding: 10px;
-      margin-top: 40px;
-      width: 200px;
+    
+      width: 300px;
       margin-left: 10px;
       font-weight: 600;
       font-size: 18px; }
   .slider-detail .vdg-cur {
     color: #FFF;
-    padding-top: 70px; }
+     }
   
   @media screen and (max-width: 1180px) {
     .slider-detail .carousel-caption {

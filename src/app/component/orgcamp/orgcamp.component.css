@@ -8,7 +8,7 @@ color: black;
 }
 .blink {
     animation: blinker 0.6s linear infinite;
-    color: #1c87c9;
+    color: black;
     font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;

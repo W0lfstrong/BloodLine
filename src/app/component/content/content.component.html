@@ -28,15 +28,15 @@
 </style>
 </head>
 <h1 style="background-color: rgb(34, 34, 34); color: white; text-align: center;">Hospital Dashboard</h1> <hr>
-<body>
+<body style="background-color: white;">
 <div class="Container">
   <nav class="navbar" >
     <input class="form-control" type="text" name="BloodBank" [(ngModel)]="BloodBank" (ngModelChange)="Search()"
     placeholder="Search by Blood Bank Name"> 
-    <pagination-controls (pageChange)="p = $event" style="margin-left: 8.8in;"></pagination-controls>
+    <pagination-controls (pageChange)="p = $event" style="margin-left: 8.8in; color: #000;"></pagination-controls>
    </nav>
-   <h2 style="text-align: center;">*Live Blood Count in terms of Pints*</h2>
-  <table id="customers">
+   <h2 style="text-align: center; color:black;">*Live Blood Count in terms of Pints*</h2>
+  <table id="customers" style="background-color: white;">
    <tr>
     <th>Serial</th>
     <th>BloodBank</th>
@@ -374,17 +374,17 @@
            
              
             
-           <div class = "modal-content">
-           <div class = "modal-body" style="background-color: rgb(48, 48, 48);">
-                     <div class="row form-group" style="background-color: rgb(48, 48, 48);">
+           <div class = "modal-content" style="background-color: white;">
+           <div class = "modal-body" >
+                     <div class="row form-group" >
                       
                          <div class="col-sm-12">
-                          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="color: white;">&times;</span>
+                          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="color: black;">&times;</span>
                                              
                                               
                                           
-                                           <br><br><img style="width: 300px; margin-left: 3.8in; border-radius: 1rem;" src="assets/images/PopUp/bloodbag1.jpg"><hr style="background-color: red;"><br>
-                                           <h2 style="text-align: center;color: white;">Your requested Blood Stock has been booked!</h2>
+                                           <br><br><img style="width: 600px; margin-left: 2.2in; border-radius: 1rem;" src="assets/images/PopUp/bloodbag1.jpg">
+                                           <h2 style="text-align: center;color: black;">Your requested Blood Stock has been booked!</h2>
                                               
                                   </div>
                                            </div>

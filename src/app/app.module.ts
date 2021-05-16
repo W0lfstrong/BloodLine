@@ -28,7 +28,8 @@ import { OrderModule } from 'ngx-order-pipe';
 import { DonationComponent } from './donation/donation.component';
 import { GeneralComponent } from './component/general/general.component';
 import { ContactusComponent } from './component/contactus/contactus.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+ 
 
 
 
@@ -54,7 +55,8 @@ OrgcampComponent,
 DonationportalComponent,
 DonationComponent,
 GeneralComponent,
-ContactusComponent
+ContactusComponent,
+
 
   ],
   entryComponents: [HealthdayComponent, DonationdayComponent, HemophilliadayComponent, NvbddComponent, ThalassemiadayComponent,
@@ -69,7 +71,8 @@ ContactusComponent
     Ng2SearchPipeModule,
     NgxPaginationModule,
     FormsModule,
-    OrderModule
+    OrderModule,
+    NgbModule
 
 
   ],
